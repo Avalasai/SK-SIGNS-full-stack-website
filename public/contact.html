@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Contact SK SIGNS for a free quote for signage, vehicle branding, LED signs, ACP elevation and commercial branding.">
+<meta name="keywords" content="SK SIGNS, signage, branding, sign boards, vehicle branding, LED signs, ACP elevation, Chennai">
+<meta name="author" content="SK SIGNS">
+<meta name="theme-color" content="#08090c">
+<title>Contact SK SIGNS</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" aria-label="SK SIGNS home"><img class="logo-img" src="/images/project-12.jpg" alt="SK SIGNS logo"></a>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a class="" href="index.html">Home</a></li><li><a class="" href="about.html">About Us</a></li><li><a class="" href="services.html">Services</a></li><li><a class="" href="portfolio.html">Our Work</a></li><li><a class="" href="gallery.html">Gallery</a></li><li><a class="" href="why-us.html">Why Choose Us</a></li><li><a class="active" href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero"><div class="container"><span class="eyebrow">Contact Us</span><h1>Let's discuss your project.</h1><p>Send your requirements and our team can follow up about your signage or branding project.</p></div></section>
+<section class="section"><div class="container form-wrap">
+<div><span class="eyebrow">Get in touch</span><h2>Request a free quote.</h2><p style="margin-top:15px">For faster assistance, call or message us on WhatsApp.</p>
+<div style="margin-top:25px;display:grid;gap:16px">
+<div class="card"><h3>📞 Phone</h3><a style="color:var(--gold-2)" href="tel:+919042325792">+91 90423 25792</a></div>
+<div class="card"><h3>💬 WhatsApp</h3><a style="color:var(--gold-2)" href="https://wa.me/919042325792" target="_blank">Start a conversation</a></div>
+<div class="card"><h3>📍 Address</h3><p>21/13, V.V Giri Street, Devi Nagar, Avadi, Chennai-600109</p></div>
+</div></div>
+<div class="form-card">
+<form id="quoteForm" enctype="multipart/form-data">
+<div class="form-grid">
+<div class="field"><label for="name">Name *</label><input id="name" name="name" required></div>
+<div class="field"><label for="mobile">Mobile Number *</label><input id="mobile" name="mobile" type="tel" required></div>
+<div class="field"><label for="businessName">Business Name</label><input id="businessName" name="businessName"></div>
+<div class="field"><label for="serviceRequired">Service Required</label><select id="serviceRequired" name="serviceRequired"><option value="">Select a service</option>
+<option>Graphic Design</option><option>Vehicle Wrap & Branding</option><option>Wall Graphics</option><option>LED Channel Letters</option><option>ACP Elevation</option><option>Acrylic Sign Boards</option><option>3D Letter Signage</option><option>LED / Glow Sign Boards</option><option>Shop Front Branding</option><option>Office / Commercial Branding</option></select></div>
+<div class="field full"><label for="projectLocation">Project Location</label><input id="projectLocation" name="projectLocation" placeholder="City / area"></div>
+<div class="field full"><label for="message">Message / Requirements</label><textarea id="message" name="message" placeholder="Tell us about size, quantity, preferred style, timeline, etc."></textarea></div>
+<div class="field full"><label for="projectPhoto">Upload Project Photo (optional)</label><input id="projectPhoto" name="projectPhoto" type="file" accept="image/jpeg,image/png,image/webp"></div>
+<div class="field full"><button class="btn" type="submit">Submit Quote Request</button></div>
+</div>
+<div id="formNotice" class="notice"></div>
+</form></div>
+</div></section>
+<section class="section" style="padding-top:0"><div class="container"><div class="section-head"><span class="eyebrow">Find Us</span><h2>Our Location</h2></div>
+<iframe class="map" loading="lazy" src="https://www.google.com/maps?q=21%2F13%20V.V%20Giri%20Street%20Devi%20Nagar%20Avadi%20Chennai%20600109&output=embed" title="SK SIGNS location"></iframe>
+</div></section>
+<script>
+const params=new URLSearchParams(location.search);
+if(params.get("service")) document.getElementById("serviceRequired").value=params.get("service");
+</script>
+
+<a class="whatsapp" href="https://wa.me/919042325792?text=Hello%2C%20I%20need%20a%20free%20quote%20from%20SK%20SIGNS." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+<div class="lightbox"><button class="close-lightbox" aria-label="Close">×</button><img src="" alt="Project preview"></div>
+<script src="script.js"></script>
+</body></html>
